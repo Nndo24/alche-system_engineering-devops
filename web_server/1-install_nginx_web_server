@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Configures an Ubuntu machine to install and set up Nginx web server
+
+apt-get update -y
+apt-get install -y nginx
+
+echo "Holberton School" > /var/www/html/index.html
+
+service nginx restart
